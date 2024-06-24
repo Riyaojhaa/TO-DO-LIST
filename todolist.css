@@ -1,0 +1,129 @@
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(82, 79, 79);
+}
+.main {
+    margin-top:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    border-radius: 5%;
+}
+.heading {
+    color:white;
+    background-color: black;
+    font-size: 25px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#inputbox {
+    height: 35px;
+    width: 587px;
+    padding: 2px;
+    margin:5px;
+    font-weight: bold;
+    display: block;
+    border-radius: 8px;
+}
+.body {
+    height: 600px;
+    width: 600px;
+    color: black;
+    background-color: white;
+}
+li {
+    word-wrap: break-word;
+}
+#to-do-box {
+    list-style: none;
+}
+#to-do-box li {
+    position: relative;
+    padding: 6px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 2px;
+    font-size: 16px;
+    background-color: rgb(136, 40, 40);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    display: block;
+    word-break: break-all;
+    text-align:justify;
+    padding-right: 30px;
+    user-select: none;
+}
+
+.icon {
+    height: 10px;
+    width: 15px;
+    position: absolute;
+    right: 10px;
+    top:10px
+}
+.done {
+    color:black !important;
+    text-decoration: line-through !important;
+    background-color: rgb(85, 69, 69) !important;
+}
+@media (max-width: 768px) {
+    .main {
+        font-size: 18px;
+    }
+
+    .heading {
+        font-size: 22px;
+    }
+
+    #inputbox {
+        width: 90%;
+    }
+
+    #to-do-box li {
+        font-size: 14px;
+        padding-right: 20px;
+    }
+}
+
+/* Adjust styles for mobile phones */
+@media (max-width: 480px) {
+    .main {
+        font-size: 16px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .heading {
+        font-size: 20px;
+    }
+
+    #inputbox {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .body {
+        width: 100%;
+        padding: 5px;
+    }
+
+    #to-do-box li {
+        font-size: 12px;
+        padding: 4px;
+    }
+
+    .icon {
+        height: 8px;
+        width: 12px;
+        right: 5px;
+        top: 5px;
+    }
+} 
